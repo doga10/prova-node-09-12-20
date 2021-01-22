@@ -8,7 +8,7 @@ export class RemoveUserController implements Controller {
 
   async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
-      await this.removeUser.remove(httpRequest.params)
+      await this.removeUser.remove(httpRequest.params.id)
       return noContent()
     } catch (error) {
       return serverError(error)
