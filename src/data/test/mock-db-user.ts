@@ -5,6 +5,7 @@ import { UserCollection } from '../../domain/collections/user'
 import { mockUserModel } from '../../domain/test'
 import { LoadUsersRepository } from 'data/protocols/db/user/load-users-repository'
 import { SaveUserRepository } from 'data/protocols/db/user/save-user-repository'
+import { RemoveUserRepository } from 'data/protocols/db/user/remove-user-repository'
 
 export class AddUserRepositorySpy implements AddUserRepository {
   userModel = mockUserModel()
@@ -41,5 +42,13 @@ export class SaveUserRepositorySpy implements SaveUserRepository {
   async save (data: UserCollection): Promise<UserCollection> {
     this.data = data
     return this.userModel
+  }
+}
+
+export class RemoveUserRepositorySpy implements RemoveUserRepository {
+  id: string
+
+  async remove (id: string): Promise<void> {
+    this.id = id
   }
 }

@@ -36,9 +36,9 @@ describe('DbSaveUser Usecase', () => {
     await expect(promise).rejects.toThrow()
   })
 
-  test('Should return an account on success', async () => {
+  test('Should return an user on success', async () => {
     const { sut, saveUserRepositorySpy } = makeSut()
-    const account = await sut.save(mockUserModel())
-    expect(account).toEqual(saveUserRepositorySpy.userModel)
+    const user = await sut.save(mockUserModel())
+    expect(user).toEqual(saveUserRepositorySpy.userModel)
   })
 })
