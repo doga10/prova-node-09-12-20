@@ -5,7 +5,7 @@ export class DbSaveUser implements SaveUser {
     private readonly saveUserRepository: SaveUserRepository
   ) {}
 
-  async save (userData: UserCollection): Promise<UserCollection> {
+  async save (userData: UserCollection): Promise<any> {
     const newUser = await this.saveUserRepository.save(userData)
     return newUser
   }
