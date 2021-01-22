@@ -4,6 +4,7 @@ import { AddUserParams } from '../../domain/usecases/user/add-user'
 import { UserCollection } from '../../domain/collections/user'
 import { mockUserModel } from '../../domain/test'
 import { LoadUsersRepository } from 'data/protocols/db/user/load-users-repository'
+import { SaveUserRepository } from 'data/protocols/db/user/save-user-repository'
 
 export class AddUserRepositorySpy implements AddUserRepository {
   userModel = mockUserModel()
@@ -29,6 +30,16 @@ export class LoadUsersRepositorySpy implements LoadUsersRepository {
   userModel = [mockUserModel()]
 
   async load (): Promise<UserCollection[]> {
+    return this.userModel
+  }
+}
+
+export class SaveUserRepositorySpy implements SaveUserRepository {
+  userModel = mockUserModel()
+  data: UserCollection
+
+  async save (data: UserCollection): Promise<UserCollection> {
+    this.data = data
     return this.userModel
   }
 }

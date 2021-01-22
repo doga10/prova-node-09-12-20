@@ -21,7 +21,7 @@ const makeSut = (): SutTypes => {
 }
 
 describe('DbAddUser Usecase', () => {
-  test('Should call AddAccountRepository with correct values', async () => {
+  test('Should call AddUserRepository with correct values', async () => {
     const { sut, addUserRepositorySpy } = makeSut()
     const addUserParams = mockAddUserParams()
     await sut.add(addUserParams)
@@ -32,27 +32,27 @@ describe('DbAddUser Usecase', () => {
     })
   })
 
-  test('Should throw if AddAccountRepository throws', async () => {
+  test('Should throw if AddUserRepository throws', async () => {
     const { sut, addUserRepositorySpy } = makeSut()
     jest.spyOn(addUserRepositorySpy, 'add').mockImplementationOnce(throwError)
     const promise = sut.add(mockAddUserParams())
     await expect(promise).rejects.toThrow()
   })
 
-  test('Should return an account on success', async () => {
+  test('Should return an user on success', async () => {
     const { sut, addUserRepositorySpy } = makeSut()
-    const account = await sut.add(mockAddUserParams())
-    expect(account).toEqual(addUserRepositorySpy.userModel)
+    const user = await sut.add(mockAddUserParams())
+    expect(user).toEqual(addUserRepositorySpy.userModel)
   })
 
-  test('Should return null if LoadAccountByEmailRepository not return null', async () => {
+  test('Should return null if LoadUserByEmailRepository not return null', async () => {
     const { sut, loadUserByEmailRepositorySpy } = makeSut()
     loadUserByEmailRepositorySpy.userModel = mockUserModel()
-    const account = await sut.add(mockAddUserParams())
-    expect(account).toBeNull()
+    const user = await sut.add(mockAddUserParams())
+    expect(user).toBeNull()
   })
 
-  test('Should call LoadAccountByEmailRepository with correct email', async () => {
+  test('Should call LoadUserByEmailRepository with correct email', async () => {
     const { sut, loadUserByEmailRepositorySpy } = makeSut()
     const addUserParams = mockAddUserParams()
     await sut.add(addUserParams)
