@@ -25,3 +25,28 @@ A idéia é deixar o candidato bem livre pra reimplementar o código da maneira 
 ## Como será feita a entrega?
 
 Deverá ser realizado um fork deste repositório e no formulário enviado você deverá responder com o link deste fork.
+
+## Como testar?
+
+1. Tenha o docker instalado na maquina
+2. Rode o comando `docker-compose up --build`
+
+## Endpoints da aplicação?
+
+1. POST /v1/users
+   body:
+   name: string
+   username: string
+   email: string
+
+2. GET /v1/users
+
+3. PUT /v1/users
+   body:
+   name: string
+   username: string
+   email: string
+
+4. DELETE /v1/users/:id
+   params:
+   id: string
