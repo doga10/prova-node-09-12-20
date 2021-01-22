@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1611319863681" clover="3.2.0">
-  <project timestamp="1611319863682" name="All files">
-    <metrics statements="107" coveredstatements="93" conditionals="16" coveredconditionals="16" methods="34" coveredmethods="30" elements="157" coveredelements="139" complexity="0" loc="107" ncloc="107" packages="9" files="20" classes="20"/>
+<coverage generated="1611323235200" clover="3.2.0">
+  <project timestamp="1611323235200" name="All files">
+    <metrics statements="150" coveredstatements="139" conditionals="22" coveredconditionals="22" methods="48" coveredmethods="43" elements="220" coveredelements="204" complexity="0" loc="150" ncloc="150" packages="14" files="25" classes="25"/>
     <package name="data.usecases.user.add-user">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="db-add-user.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/data/usecases/user/add-user/db-add-user.ts">
@@ -101,53 +101,126 @@
         <line num="6" count="3" type="stmt"/>
       </file>
     </package>
+    <package name="presentation.controllers.user.add-user">
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="add-user-controller.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/controllers/user/add-user/add-user-controller.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="presentation.controllers.user.load-users">
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="load-users-controller.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/controllers/user/load-users/load-users-controller.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="presentation.controllers.user.remove-user">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="remove-user-controller.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/controllers/user/remove-user/remove-user-controller.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="presentation.controllers.user.save-user">
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="save-user-controller.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/controllers/user/save-user/save-user-controller.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="presentation.errors">
-      <metrics statements="25" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
+      <metrics statements="25" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
       <file name="access-denied-error.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/errors/access-denied-error.ts">
         <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
       </file>
       <file name="email-in-use-error.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/errors/email-in-use-error.ts">
         <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
       </file>
       <file name="index.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/errors/index.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
-        <line num="2" count="4" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
       </file>
       <file name="invalid-param-error.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/errors/invalid-param-error.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="4" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
       </file>
       <file name="missing-param-error.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/errors/missing-param-error.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="4" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
       </file>
       <file name="server-error.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/errors/server-error.ts">
-        <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
       </file>
       <file name="unauthorized-error.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/errors/unauthorized-error.ts">
         <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="presentation.helpers.http">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+      <file name="http-helper.ts" path="/home/douglasdennys/Projects/tests/prova-node-09-12-20/src/presentation/helpers/http/http-helper.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
       </file>
     </package>
     <package name="validation.validators">
